@@ -6,7 +6,7 @@ def load_mac_dict(filename, ret=None):
 
   if type(filename) == type([]):
     for i in filename:
-      ret = load_mac_dict(i, ret) 
+      ret = load_mac_dict(i, ret)
   else:
     with open(filename, newline='') as csvfile:
       reader = csv.reader(csvfile)
